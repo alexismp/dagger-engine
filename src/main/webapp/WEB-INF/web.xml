@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>CoffeeServlet</servlet-name>
+        <servlet-class>org.alexismp.daggerengine.CoffeeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CoffeeServlet</servlet-name>
+        <url-pattern>/CoffeeServlet</url-pattern>
+    </servlet-mapping>
+    <listener>
+        <listener-class>org.alexismp.daggerengine.DaggerServletContextListener</listener-class>
+    </listener>
+</web-app>
